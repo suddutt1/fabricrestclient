@@ -75,7 +75,7 @@ func main() {
 
 	router.POST("/api/admin/enrolladmin/:adminID", func(c *gin.Context) {
 		adminID := c.Param("adminID")
-		if !sdkClient.ErollOrgAdmin(true, adminID) {
+		if !sdkClient.EnrollOrgAdmin(true, adminID) {
 			renderOutput(200, fmt.Sprintf("Unable to enroll adminID %s ", adminID), c)
 			return
 		}
