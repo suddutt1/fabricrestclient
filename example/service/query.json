@@ -1,0 +1,8 @@
+{
+	"channel":"defaultchannel",
+	"ccid":"scm",
+	"fn":"query",
+	"args":["a"],
+	"peers":["peer0.buyer.net"],
+	"user":"suddutt1"
+}

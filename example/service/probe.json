@@ -1,0 +1,8 @@
+{
+	"channel":"defaultchannel",
+	"ccid":"scm",
+	"fn":"probe",
+	"args":[""],
+	"peers":["peer0.seller.net"],
+	"user":"suddutt1"
+}

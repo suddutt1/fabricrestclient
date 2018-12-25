@@ -1,0 +1,32 @@
+{
+    "fabricVersion":"1.1.0",
+    "orderers":{
+        "name" :"Orderer","mspID":"OrdererMSP","domain":"orderer.net","ordererHostname":"orderer","SANS":"localhost","type":"solo"
+    },
+    "addCA":"true",
+    
+    "orgs":[
+        { 
+            "name" :"Buyer",
+            "domain":"buyer.net",
+            "mspID":"BuyerMSP",
+            "SANS":"localhost",
+            "peerCount":1,
+            "userCount":2
+        },
+        { 
+            "name" :"Seller",
+            "domain":"seller.net",
+            "mspID":"SellerMSP",
+            "SANS":"localhost",
+            "peerCount":1,
+            "userCount":2
+        }
+        ],
+    "consortium":"ExpressConsortium",
+    "channels" :[
+                    {"channelName":"default","orgs":["Buyer","Seller"] }
+                ],
+    "chaincodes":[{"channelName":"default","ccid":"scm","version":"1.0","src":"github.com/scm","participants":["Buyer","Seller"]}]            
+                
+}

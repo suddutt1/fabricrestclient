@@ -1,0 +1,8 @@
+{
+	"channel":"defaultchannel",
+	"ccid":"scm",
+	"fn":"save",
+	"args":["a","200"],
+	"peers":["peer0.seller.net"],
+	"user":"suddutt1"
+}
