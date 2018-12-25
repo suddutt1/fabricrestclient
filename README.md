@@ -19,12 +19,21 @@ Based on the configuration given in the json/yaml it will interact with the unde
 5. GET / < Service availability probe>
 
 ## API Call details
+```sh
 curl -X POST http://localhost:8080/api/admin/enrolladmin/Admin
 curl -X POST -d@./userreg.json http://localhost:8080/api/admin/enrolluser
 curl -X POST -d@./probe.json http://localhost:8080/api/chaincode/query
 curl -X POST -d@./save.json http://localhost:8080/api/chaincode/invoke
 curl -X POST -d@./query.json http://localhost:8080/api/chaincode/query
+```
 
+
+
+```sh
 docker exec -it ca.buyer.net bash -e ./add_affiliation_buyer.sh
+```
+
+```sh
 docker exec -it ca.seller.net bash -e ./add_affiliation_seller.sh
+```
 

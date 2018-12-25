@@ -34,7 +34,7 @@ client:
 
   # Root of the MSP directories with keys and certs.
   cryptoconfig:
-    path: /home/suddutt1/projects/bsnet/network
+    path: /home/suddutt1/projects/securebsnet/network
 
   credentialStore:
     path: "./tmp/state-store"
